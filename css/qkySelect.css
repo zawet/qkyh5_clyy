@@ -1,0 +1,22 @@
+
+
+.qsClear:before,.qsClear:after{ content: " "; display: table;}
+.qsClear:after {clear: both;}
+
+.qky-select{ width:100%; height:48px; background:#fafafa; border-bottom:1px solid #ddd; position:relative;}
+.qky-select-value{ text-align:center; width:100%; line-height:48px;}
+.qsv-label{ font-size:20px; color:#111;}
+.qsv-label span{ padding:0 5px;}
+.qsv-i{ font-size:22px!important;; margin-left:5px;}
+	
+.qky-select-mask{ position:fixed; width:100%; z-index:999; left:0; height:100%; top:0; display:none;}
+.qky-select-optionbox{position: fixed; width:100%; bottom:0; left:0; z-index:99999999999;transform:translateY(100%);height:226px; background:#fff; border-top:1px solid #ddd;}
+.qky-select-optionbox{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}
+.qky-select-optionbox.open{ transform:translateY(0)}
+.qso-center{ position:absolute; width:100%; height:62px;background:#f1f1f1; top:62px; left:0;}
+.qky-select-optionbox .option{ line-height:62px; height:62px; text-align:center; font-size:14px;display:block; width:100%;}
+.qky-select-optionbox .swiper-container{ height:186px !important; float:left;}
+.qky-select-optionbox .swiper-slide-active a.option{font-size:18px; }
+	
+.qso-but{ text-align:center; background:#08b322; color:#fff; line-height:36px; height:36px; position:absolute; bottom:2%; border-radius:6px; width:96%; left:2%; font-size:16px;}
+.blur{-webkit-filter: blur(10px);filter: blur(10px);-moz-filter: blur(10px);}

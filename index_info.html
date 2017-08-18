@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>申请详情</title>
+<link  href="css/commonH5.css" rel="stylesheet" type="text/css"/>
+<link  href="css/qkyui2.1.css" rel="stylesheet" type="text/css"/>
+<link  href="css/qkyuih5_theme.css" rel="stylesheet" type="text/css"/>
+<link  href="css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link  href="css/clyy.css" rel="stylesheet" type="text/css"/>
+<link  href="css/qkySelect.css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="qkybody">
+
+
+<!--中部标准，一般放列表-->
+<div class="qkyh5_main pt0">
+
+	<div class="qkyli guodu yc" id="shengpi">
+        <a class="qkyli_but mr10" opens="page1">审批通过</a>
+        <a class="qkyli_but" opens="page2">审批不通过</a>
+    </div>
+    <div class="qkyli guodu yc" id="tiaozheng">
+    	<a class="qkyli_but mr10">无</a>
+        <a class="qkyli_but mr10" opens="page1">时间调整</a>
+        <a class="qkyli_but" opens="page2">撤销</a>
+    </div>
+    
+    <div class="qkyli_page page1 open">
+        <div class="qkyli ub ub-ac ba_ff">
+            <div class="qkyli_tit ub-f1">用车时间</div>
+            <div class="qkyli_cont ub-f1" id="carTime"></div>
+        </div>
+        <div class="qkyli ub ub-ac ba_ff">
+            <div class="qkyli_tit ub-f1">选择司机</div>
+            <div class="qkyli_cont ub-f1" id="driver"></div>
+        </div>
+        <div class="qkyli ub ub-ac ba_ff">
+            <div class="qkyli_tit ub-f1">是否发送短信</div>
+            <div class="qkyli_cont ub-f1"><div class="qky_swich trn"><span class="bshw trn"></span></div></div>
+        </div>
+    </div>
+    
+    <div class="qkyli_page page2">
+    	<div class="qkyli ba_ff">
+    	<textarea class="qkyli_input" rows="6">请输入回退理由</textarea>
+        </div>
+    </div>
+    
+</div>
+
+<div class="qkyh5_footbg yc">
+   <ul class="footer ub ub-ac t_c">
+    	<li class="ub-f1 fz_16"><a class="co_ff iskuai" id="save">提交</a></li>
+    </ul>
+</div>
+
+<div class="yc" id="contMould">
+	<div class="qkyli ub ub-ac ba_ff">
+        <div class="qkyli_tit ub-f1"></div>
+        <div class="qkyli_cont ub-f1"></div>
+    </div>
+</div>
+
+<script src="js/sea.js"></script>
+<script src="js/seaconfig2.0.js"></script>
+<script>
+seajs.use(["jq","run"],function(j,r){
+	r.runCont();	
+});
+
+ 
+</script>
+</body>
+</html>

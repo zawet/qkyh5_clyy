@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*************************************************************
+基础信息：
+	主明：此css全课云ui样式，属于一些组建和控件的统一与各类的样式
+	可以添加和修改里面的样式，但得注明版本和更新内容;
+	初始化版本号：1.0;
+	初始化人员：zwt;
+	日期：2016/06/06;
+**********************************************************
+更新信息：
+	更改版本号：2.0;
+	更改人员：zwt;
+	日期：2016/08/11;
+	更改内容：抽出颜色风格到qkyui_theme.css,优化和新增日历，下拉的特殊情况下的样式，增加一些宽度的档位，新增进度条，连体按钮，伸头导航，交互导航，反色背景fhbg按钮等新控件；
+**************************************************************/
+
+.qkymain{ padding:6%; background:#fff; border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
+
+/*按钮*/
+.qkybut{ padding:0 8px; text-align:center; line-height:32px; height:32px; font-size:14px; display:inline-block; box-sizing:border-box;}
+.qkybut{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}
+.qkybut.li_he40{height:40px; line-height:40px;}
+.qkybut.li_he48{height:48px; line-height:48px;}
+.qkybut.li_he20{height:20px; line-height:20px;}
+
+/*连体按钮*/
+.qkybut_lt{text-align:center;}
+.qkybut_lt a{ display:block; float:left; height:35px; line-height:35px; background:#fff; padding:0 16px; border:1px solid #13b1bb;text-align:center; color:#13b1bb; font-size:14px;}
+.qkybut_lt a.st{ border-radius:6px 0 0 6px; margin-left:8px; border-right:none;}
+.qkybut_lt a.mi{}
+.qkybut_lt a.en{ border-radius:0 6px 6px 0;border-left:none;}
+.qkybut_lt a:hover,.qkybut_lt a.cur{ background:#13b1bb; color:#fff;}
+.qkybut_lt.center{ width:100%;}
+.qkybut_lt.center a{ display:inline-block; float:none; margin-left:-4px;}
+
+/*自主复选框*/
+.qkychbox{ width:14px; height:14px; border-radius:2px; display:inline-block !important; line-height:15px; text-align:center;}
+.qkychbox i{ font-size:12px; }
+.qkychbox.w16{ width:16px; height:16px; line-height:17px;}
+.qkychbox.w18{ width:18px; height:18px; line-height:19px;}
+.qkychbox.w20{ width:20px; height:20px; line-height:21px;}
+.h34{ margin:8px 0;}
+.qkychbox.h34{ margin-right:4px; display:block;}
+.qkychbox.yuan{ width:16px; height:16px; line-height:17px; border-radius:50%;}
+
+/*表格基础样式*/
+.qkytable{ width:100%;}
+.qkytable th{ padding:8px 0; font-size:14px;}
+.qkytable td{  text-align:center; padding:10px 0; font-size:14px;border:1px solid; border-top:none; border-left:none;  line-height:32px;}
+.qkytable.type2 td{line-height: normal;}
+.qkytable.type3 th{box-shadow: none;  padding:12px 0;}
+.qkytable.type3 tr.uptit th{font-size:18px;margin-left:1px;}
+.qkytable.type3 td{line-height: normal;padding:7px 0;}
+
+/*进度条*/
+.qkyProgress{ width:100px; height:10px; border:1px solid #ddd; border-radiu:2px; position:relative; margin-right:36px;}
+.qkyProgress_zi{ width:0%; height:100%; background:#00bb9a;border-radiu:2px; }
+.qkyProgress_show{position:absolute; width:30px; text-align:center; color:#666; top:0; right:-36px; height:100%; line-height:10px;}
+
+.qkydate_lr{ width:100%;}
+.date_lbut,.date_rbut{ color:#333; border-radius:6px; padding:8px 0; margin:0 16px; color:#04be02;}
+.date_cal input{ width:100%; height:32px; line-height:32px; background:none; text-align:center; color:#04be02; font-size:18px; border:none;}

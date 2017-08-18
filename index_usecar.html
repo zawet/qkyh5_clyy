@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>申请用车</title>
+<link  href="css/commonH5.css" rel="stylesheet" type="text/css"/>
+<link  href="css/qkyui2.1.css" rel="stylesheet" type="text/css"/>
+<link  href="css/qkyuih5_theme.css" rel="stylesheet" type="text/css"/>
+<link  href="css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link  href="css/clyy.css" rel="stylesheet" type="text/css"/>
+<link  href="css/qkySelect.css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="qkybody">
+<!--中部标准，一般放列表-->
+<div class="qkyh5_main clear3 pt0">
+	<div class="qkyli ub ub-ac ba_f5">
+        <div class="qkyli_tit ub-f1">用车人员</div>
+        <div class="qkyli_cont ub-f1">罗严兴</div>
+    </div>
+    <div class="qkyli ub ub-ac ba_ff">
+        <div class="qkyli_tit ub-f1">申请车牌</div>
+        <div class="qkyli_cont ub-f1" id="caPlate"></div>
+    </div>
+    <div class="qkyli ub ub-ac ba_ff">
+        <div class="qkyli_tit ub-f1">用车时间</div>
+        <div class="qkyli_cont ub-f1" id="carTime"></div>
+    </div>
+    <div class="qkyli unb">
+        <div class="qkyli_tit">估计用时</div>
+        <div class="qkyli_cont"><input type="text" class="qkyli_input" value="3天"></div>
+    </div>
+    <div class="qkyli unb">
+        <div class="qkyli_tit ">随车人数</div>
+        <div class="qkyli_cont"><input type="text" class="qkyli_input" value="2人"></div>
+    </div>
+    <div class="qkyli unb">
+        <div class="qkyli_tit ">目的地址</div>
+        <div class="qkyli_cont"><input type="text" class="qkyli_input" value="中山纪念中学"></div>
+    </div>
+    <div class="qkyli unb">
+        <div class="qkyli_tit ">用车事由</div>
+        <div class="qkyli_cont"><input type="text" class="qkyli_input" value="进校拜访"></div>
+    </div>
+    <div class="qkyli unb">
+        <div class="qkyli_tit ">用车备注</div>
+        <div class="qkyli_cont"><textarea class="qkyli_input" rows="3">归期未定</textarea></div>
+    </div>
+    
+</div>
+
+<!--底部浮动按钮--> 
+<div class="qkyh5_footbg">
+   <ul class="footer ub ub-ac t_c">
+    	<li class="ub-f1 fz_16"><a class="co_ff iskuai" id="save">提交</a></li>
+    </ul>
+</div>
+
+
+<script src="js/sea.js"></script>
+<script src="js/seaconfig2.0.js"></script>
+<script>
+seajs.use(["jq","run"],function(j,r){
+	r.runUsecar();
+});
+</script>
+</body>
+</html>
